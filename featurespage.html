@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxxstudy</title>
+    <title>features</title>
     <link rel="stylesheet" href="css/study.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <div class="head">
@@ -15,65 +18,28 @@
         <div class="nav">
             
                 <p><a href="studysync.html">Home</a></p>
-                <p><a href="featurespage.html">Features</a></p>
+                <p><a href="#">Features</a></p>
                 <p><a href="price.html">Pricing</a></p>
-                <p><a href="aboutpage.html">About</a></p>
+                <p><a href="#">About</a></p>
            
         </div>
         <div class="contact">
             <button ><a href="mailto:madhabpadhi72@gmail.com">Contact us</a></button>
         </div>
     </div>
+    
 
-    <div class="page1">
-        <div class="container1">
-            <div class="para1">
-                <p>Very intrigued to introduce</p>
-                <h1>Effortless learning for a bright future</h1>
-               <pre>Discover, Review, and Share Your Learning Journey! 
-Explore thousands of online courses from platforms like Udemy,
-Unacademy, and more. See what others have to say and share your
-own experiences to help future learners.</pre>
-               
-                <div class="button">
-                    <a href="login.html" id="button1">Start now</a>
-                    <a href="reviewpage.html" id="button2">Take tour</a>
-                </div>
-                
-            </div>
-            <div class="img1"><img src="images/flow.webp" alt="img" width="500px" height="500px" id="flowimg"></div>
 
-        </div>
-        <p id="head1">Trusted by the best:</p>
-        <div class="container2">
-            
-            <div class="companies">
-                <div class="comp">
-                    <img src="images/google.webp" alt="img" height="70px" width="80px">
-                    <span >Google</span>
-                </div>
-                <div class="comp">
-                    <img src="images/pin.webp" alt="img" height="70px" width="80px">
-                    <span>Pintrest</span>
-                </div>
-                <div class="comp">
-                    <img src="images/micro.webp" alt="img" height="70px" width="80px">
-                    <span>Microsoft</span>
-                </div>
-                <div class="comp">
-                    <img src="images/adobe.webp" alt="img" height="70px" width="80px">
-                    <span>Adobe</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- <div class="page2">
+    
+    <div class="page2">
         <h1 id="head2">Our competitive advantage</h1>
 <pre id="para2">                 These are some of the points
     which make us best in the market and provide the best value </pre>
 
-    <div class="cards">
+    <div class="cards" id="cardsContainer"></div>
+
+    <!-- <div class="cards">
         <div class="card" id="card1">
             <div class="imgcard">
                 <img src="PersonalizedLearn.svg" alt="imh"  height="40px" width="40px">
@@ -125,59 +91,122 @@ own experiences to help future learners.</pre>
             </div>
             <div class="feature" id="feature6">Analytics and insights</div>
             <div class="feature-description">We keep track of every student and their advancement and help them improve faster</div>
-        </div>
+        </div> -->
+
+
+
+        <div class="cards" id="cardsContainer"></div>
     </div>
     </div>
     <div class="page3">
         <h2 id="head3">What other's say about us</h2>
-        <div class="interview">
-            <div class="people">
-                <div class="desc"><p>Studysync revolutionalized my classroom experience by engaging content and specialised teachers fully recommended for students</p></div>
-                <div class="photo"><img src="avatar1.png" alt="img"></div>
-                <div class="name">
-                    <p>Sarah Jhonson</p>
-                    <p>Computer-science student</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>Studysync revolutionalized my classroom experience by engaging content and specialised teachers, fully recommended for students.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar1.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Sarah Jhonson</p>
+                            <p>Computer-science student</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>Studysync revolutionalized my classroom experience by helping my students by providing specialised attention.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar2.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Micheal Clark</p>
+                            <p>Highschool CS teacher</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>Studysync improved my daughter's technical skill and helped her pursue her dreams.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar3.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Dr. Raj Sharma</p>
+                            <p>Parent</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>Studysync has been an invaluable tool in my learning journey, allowing me to improve my grades significantly through personalized guidance.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar4.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Jessica Lee</p>
+                            <p>University Student</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>The interactive content on Studysync has helped me engage my students better, making lessons more enjoyable and impactful.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar5.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Mr. John Doe</p>
+                            <p>Middle School Teacher</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="people">
+                        <div class="desc">
+                            <p>Thanks to Studysync, I feel more confident in my subject area, and the assessments have really helped me track my progress.</p>
+                        </div>
+                        <div class="photo">
+                            <img src="images/avatar6.png" alt="img">
+                        </div>
+                        <div class="name">
+                            <p>Daniel Kim</p>
+                            <p>High School Student</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="people">
-                <div class="desc"><p>Studysync revolutionalized my classroom experience by helping my students by providing specialised attention</p></div>
-                <div class="photo"><img src="avatar2.png" alt="img"></div>
-                <div class="name">
-                    <p>Micheal clark</p>
-                    <p>Highschool CS teacher</p>
-                </div>
-            </div>
-            <div class="people">
-                <div class="desc"><p>Studysync improved my daughter's technical skill and help her persue her dreams</p></div>
-                <div class="photo"><img src="avatar3.png" alt="img" ></div>
-                <div class="name">
-                    <p>DR. Raj Sharma</p>
-                    <p>Parent</p>
-                </div>
-            </div>
+            <!-- Add Pagination (optional) -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- Add Navigation (optional) -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
-
-
-    <div class="page4">
-        <div class="news">
-            <div class="imh">
-                <img src="newsimg.jpg" alt="img" height="300px" width="300px">
-            </div>
-            <div class="form">
-                <h1 id="head4">Get the latest updates</h1>
-                <p id="para4">Signup for the news lettor</p>
-                <div class="email">
-                    
-                    <input type="email" id="inputemail " placeholder="Email">
-                    <input type="submit" name="sub" id="inputemail">
-                    <p>By sigining up you are agreeng to our <a href="#">terms</a> and <a href="#">Conditions</a></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
+    
     <div class="page5">
         <footer>
             <div class="leftfooter">
@@ -236,8 +265,7 @@ own experiences to help future learners.</pre>
     © 2021 - Present StudySync. All rights reserved.
 </div>
 
-
 <script src="js/feature.js"></script>
-    
+
 </body>
 </html>
